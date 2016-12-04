@@ -1,0 +1,107 @@
+
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Comic Sans MS",  sans-serif;
+  color: black;
+ margin-right: 5%;
+ margin-left: 5%;
+}
+
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 175%;
+}
+
+p {
+  padding: 40px 20px 5px 5px;
+ 
+}
+
+.section {
+  background-color: #bfbcbc;
+  border: 1px solid black;
+  margin-top: 15px;
+ }
+
+
+.section-title h2{
+  vertical-align: center;
+  text-align: center;
+  margin: 0px;
+}
+
+.section-title{
+  float: right;
+  width: 45%;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 5px;
+}
+
+
+.section-title-chicken{
+background-color: #e1a2a5;
+}
+
+.section-title-beef{
+background-color: #A52A2A;
+color: white;
+}
+
+.section-title-sushi{
+background-color: #e1cf65;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+
+
+
+/********** Desktop devices only **********/
+@media (min-width: 992px) {
+  .col-lg-4{
+    float: left;
+    width: 32%;
+    margin-right:  2%;
+  }
+}
+
+
+/********** Tablet devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6 {
+    float: right;
+    width: 49%;
+  }
+  .col-md-6:first-child {
+    float: left;
+    width: 49%;
+    margin-right:  2%;
+  }
+  .col-md-6:last-child {
+    float: left;
+    width: 100%;
+  }
+}
+
+.col-lg-4:last-child,
+.col-md-6:last-child {
+   margin-right: 0;
+}
+
+
+
+.clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+}
